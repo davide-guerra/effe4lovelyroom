@@ -52,7 +52,7 @@
         div#recapiti-wrapper {
             display: flex;
             flex-direction: column;
-            gap: 1rem;
+            gap: .5rem;
             align-items: center;
         }
         /* @media screen and (min-width: 820px) {
@@ -76,6 +76,12 @@
         a.recapiti svg {
             height: 1.25rem;
             fill: #887453;
+            display: none;
+        }
+        @media screen and (min-width: 820px) {
+            a.recapiti svg {
+                display: block;
+            }
         }
         a.recapiti {
             color: #887453;
