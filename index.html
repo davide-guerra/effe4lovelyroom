@@ -63,9 +63,14 @@
         } */
         a.recapiti {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             gap: 0.5rem;
             align-items: center;
+        }
+        @media screen and (min-width: 820px) {
+            a.recapiti {
+                flex-direction: row;
+            }
         }
         a.recapiti svg {
             height: 1.25rem;
